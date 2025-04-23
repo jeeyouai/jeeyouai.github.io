@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site do Gui</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <style>
+      @media (min-width: 1920px) {
+        .noticia-imagem {
+          width: 300px;
+          height: 200px;
+        }
+        .logo-img {
+          max-height: 126px;
+        }
+      }
+
+      .noticia-imagem {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 200px;
+        object-fit: cover;
+        float: right; /* Alterado para right */
+        margin-left: 16px; /* Invertido o margin */
+        margin-bottom: 16px;
+        shape-outside: margin-box;
+      }
+
+      .noticia-container {
+        display: flow-root;
+        min-height: 200px;
+      }
+
+      .noticia-texto {
+        padding-right: 16px; /* Espaço entre texto e imagem */
+      }
+
+      .logo-img {
+        height: auto;
+        width: auto;
+        max-height: 126px;
+        margin-top: -40px;
+      }
+
+      .shape {
+        color: #f2f3f4;
+        border: 1px solid;
+        background-color: #212f3d ;
+        border-radius: 1rem;
+        padding: 1rem;
+        text-align: justify;
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body class="bg-stone-100 font-sans">
+    <header class="bg-neutral-950 shadow-lg py-4 px-6 flex flex-col items-center">
+      <div class="text-sm text-gray-300 self-start w-120 text-left mb-2"><p>Segunda-feira,</p><p>21 de abril de 2025</p></div>
+      <img src="https://g12brasil.com/wp-content/uploads/2023/03/Brasil.png" alt="Logo do site" class="logo-img" />
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 px-4 lg:px-5">
+
+      <!-- Coluna da esquerda -->
+      <div class="lg:col-span-2 flex flex-col gap-4">
+
+<!-- Notícia 2 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHgN7Ek6nyzj1ny5C_MXM6uE-KL37ixViBQw&s" alt="Imagem da Notícia 2" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">Morre o papa Francisco, aos 88 anos</h2>
+            <p>O papa Francisco, uma voz dos pobres que reformulou a Igreja Católica, morreu aos 88 anos, nesta segunda-feira (21). A morte do papa foi anunciada pelo cardeal Kevin Farrell, camerlengo do Vaticano.</p>
+            <p class="mt-2">Francisco, nascido Jorge Mario Bergoglio, assumiu o comando da Santa Sé em março de 2013. Ele marcou a história da Igreja Católica como o primeiro papa latino-americano e o primeiro jesuíta a ocupar o cargo.</p>
+            <div class="shape">•🔎 O papa fez sua última aparição pública no domingo, 20, durante as celebrações da Páscoa na Praça de São Pedro, no Vaticano, para uma caminhada surpresa.</div>
+          </div>
+        </div>
+
+        <!-- Notícia 1 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://thenews.waffle.com.br/_next/image?url=https%3A%2F%2Fwaffle-prod.s3.amazonaws.com%2Fapp%2Fuploads%2F2025%2F04%2F21013719%2Flula-stuckert-planalto.jpg&w=3840&q=75" alt="Imagem da Notícia 1" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">Governo quer plano de saúde popular como vitrine de 2025</h2>
+            <p>O governo Lula está estudando lançar um plano popular que custaria até R$ 100 por mês. A proposta é: ampliar o acesso a exames e consultas, mas sem sobrecarregar o SUS.</p>
+            <p class="mt-2">A ideia é aliviar a fila do SUS e atrair parte da população que hoje está desassistida, ou que paga caro em planos de saúde tradicionais. Já estima-se que a proposta pode alcançar até 50 milhões de brasileiros.</p>
+            <p class="mt-2">O plano deve incluir consultas, exames básicos e uma cobertura mínima, em modelo ainda em estudo. A pressa é grande: o governo quer apresentar o pacote de saúde como um dos carros-chefes de 2025.</p>
+            <div class="shape">•🔎 Hoje, são mais de 52 milhões de brasileiros com planos privados de saúde — ou seja, a nova proposta poderia dobrar esse número. Ainda não está claro quem vai subsidiar os custos, quais empresas vão aderir ou que tipo de serviço será garantido.</div>
+          </div>
+        </div>
+
+        <!-- Notícia 3 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://s2-g1.glbimg.com/aKQwB-SKVr0xg7TDYBCcoMflAIM=/1920x0/filters:format(jpeg)/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/s/q/NfeAMeQqGbeTxBamCDoA/design-sem-nome-70-.jpg" alt="Imagem da Notícia 3" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">Kiev e Moscou acusam-se mutuamente de quebrar cessar-fogo de páscoa</h2>
+            <p>O presidente ucraniano, Volodymyr Zelensky, acusou o exército russo de tentar criar a ilusão de um cessar-fogo durante a Páscoa para fins de propaganda. Em pronunciamento, Zelensky afirmou que, apesar dos discursos públicos sobre uma trégua religiosa, as forças russas continuaram ataques em regiões como Donetsk e Kharkiv. </p>
+            <p class="mt-2">Zelensky ainda alertou que a Rússia estaria usando a data comemorativa para maquiar violações e ganhar simpatia internacional, enquanto mantém ofensivas em áreas estratégicas.</p>
+            <p class="mt-2">A Rússia nega as acusações, afirmando que propôs uma pausa humanitária para a Páscoa, mas responsabiliza a Ucrânia por "sabotar a paz".</p>
+            <div class="shape">•🔎 Desde a primeira investida russa na região da Crimeia, em 2014, estima-se que Putin tenha violado 25 cessar-fogo.</div>
+
+            </p>
+          </div>
+        </div>
+
+        <!-- Notícia 4 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/04/2025-04-02T202320Z_1_LYNXNPEL3111U_RTROPTP_4_USA-TRUMP-POLL-e1743626191253.jpg" alt="Imagem da Notícia 4" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">Índice de aprovação de Trump sobre a economia cai para o menor de sua carreira presidencial</h2>
+            <p>Donald Trump está registrando os piores números de aprovação econômica de sua carreira presidencial em meio a um amplo descontentamento com o tratamento de tarifas, inflação e gastos do governo, de acordo com a última Pesquisa Econômica da CNBC All-America.</p>
+            <p class="mt-2">A pesquisa descobriu que o impulso no otimismo econômico que acompanhou a reeleição de Trump desapareceu, com mais americanos agora acreditando que a economia vai piorar.</p>
+            <p class="mt-2">Com aprovação de apenas 43%, o feriado de Páscoa foi marcado por milhares de americanos protestando contra o governo em dezenas de localidades, principalmente em grandes metrópoles.</p>
+          </div>
+        </div>
+
+        <!-- Notícia 5 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/11/Lula-e-Xi-Jinping.jpeg" alt="Imagem da Notícia 5" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">Brasil e China estreitam os laços</h2>
+            <p>De janeiro a março, a corrente de comércio entre Brasil e China bateu recorde para o período e ultrapassou os US$ 38,8 bilhões, com US$ 19,8 bilhões em exportações brasileiras e US$ 19 bilhões em importações.</p>
+            <p class="mt-2">No setor do agronegócio, o governo brasileiro já reconhece oficialmente que a disputa comercial entre China e EUA pode abrir novas oportunidades. O ministro da Agricultura, Carlos Fávaro, afirmou que a tensão entre os dois países têm acelerado algumas negociações com Pequim.</p>
+            <p class="mt-2">O Brasil apresenta um papel de destaque na geopolítica econômica, podendo mudar o cenário mundial. Os tarifaços de Trump, seguidos com seus discursos contra latino-americanos têm sido grandes fatores para a aproximação do Brasil com a China.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna da direita com manchetes -->
+      <div class="space-y-4 border-l border-gray-300 pl-4">
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete1">
+          <h2 class="text-xl font-bold mb-2">🗓 HOJE É DIA...</h2>
+          <p>
+            <ul>
+              <li>💡 da Criatividade e Inovação</li>
+              <li>⚔️ da Inconfidência Mineira</li>
+              <li>🧵 da Indústria Têxtil</li>
+              <li>🔸 do Jardim de Infância</li>
+              <li>🌎 da Latinidade</li>
+              <li>🪶 do Maçarico (Ave)</li>
+              <li>👷 do Metalúrgico</li>
+              <li>🚦 da Paz no Trânsito</li>
+              <li>🚔 da Polícia Civil</li>
+              <li>👮 da Polícia Militar</li>
+              <li>🔸 de Tiradentes - Patrono da Nação Brasileira</li>
+            </ul>
+          </p>            
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">Principais Manchetes Internacionais</h2>
+          <ul>
+            <li><a href="https://gauchazh.clicrbs.com.br/mundo/noticia/2025/04/ondas-gigantes-deixam-ao-menos-seis-mortos-no-litoral-da-australia-cm9q75331004n014dkseud0mc.html" class="underline hover:text-pink-400">• Ondas gigantes deixam ao menos seis mortos na Austrália</a></li>
+            <li><a href="https://www.noticiasaominuto.com.br/mundo/2277238/aviao-colide-com-cabos-de-eletricidade-e-deixa-quatro-mortos-nos-eua" class="underline hover:text-pink-400">• Avião colide com cabos de eletricidade e deixa quatro mortos nos EUA</a></li>
+            <li><a href="https://www.infomoney.com.br/mundo/ataques-israelenses-no-libano-deixam-ao-menos-dois-mortos-e-dois-feridos/" class="underline hover:text-pink-400">• Ataques israelenses no Líbano deixam ao menos dois mortos e dois feridos</a></li>
+            <li><a href="https://www.cnnbrasil.com.br/internacional/fieis-fazem-guerra-de-foguetes-em-celebracao-de-pascoa-na-grecia/" class="underline hover:text-pink-400">• Em antiga tradição, fiéis fazem guerra de foguetes em celebração de Páscoa na Grécia </a></li>
+            <li><a href="https://olhardigital.com.br/2025/04/20/ciencia-e-espaco/astronomos-usam-ia-para-cacar-planetas-semelhantes-a-terra/" class="underline hover:text-pink-400">• Astrônomos usam IA para caçar planetas semelhantes à Terra</a></li>
+            <li><a href="https://g1.globo.com/tecnologia/noticia/2025/04/20/astronauta-mais-velho-em-atividade-da-nasa-volta-a-terra-no-aniversario-de-70-anos.ghtml" class="underline hover:text-pink-400">• Astronauta mais velho em atividade da Nasa volta à Terra no aniversário de 70 anos</a></li>
+          </ul>
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">Principais Manchetes Nacionais</h2>
+          <ul>
+            <li><a href="https://www.cnnbrasil.com.br/esportes/brasileirao/brasileirao-palmeiras-dribla-lei-do-ex-bate-fortaleza-e-volta-a-lideranca/" class="underline hover:text-pink-400">• Palmeiras volta à liderança do Brasileirão</a></li>
+            <li><a href="https://diariodopoder.com.br/esporte/csa-esporte/hugo-calderano-vence-inedita-copa-do-mundo-de-tenis-de-mesa-assista" class="underline hover:text-pink-400">• Hugo Calderano conquista Copa do Mundo de tênis de mesa</a></li>
+            <li><a href="https://g1.globo.com/politica/noticia/2025/04/20/barroso-rebate-criticas-da-economist-e-defende-atuacao-do-stf.ghtml" class="underline hover:text-pink-400">• Barroso rebate críticas à revista inglesa e defende atuação do STF</a></li>
+            <li><a href="https://www.noticiasaominuto.com.br/tech/2276934/chuva-de-meteoros-como-assistir-ao-espetaculo-da-astronomia-no-brasil" class="underline hover:text-pink-400">• Chuva de meteoros: como assistir ao espetáculo da astronomia no Brasil</a></li>
+            <li><a href="https://www.uai.com.br/uainoticias/2025/04/21/uma-onda-de-frio-vai-mudar-o-clima-no-brasil-e-ninguem-esta-preparado/" class="underline hover:text-pink-400">• Frente fria avança em direção ao Brasil</a></li>
+          </ul>
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">📊 Indicadores Econômicos</h2>
+          <ul>
+            <li>• IBOVESPA: 129.650,03 📈</li>
+            <li>• Dólar Comercial R$ 5,804 📉</li>
+            <li>• Dólar Turismo R$ 6,036📉</li>
+            <li>• Euro R$ 6,66 📈</li>
+            <li>• Bitcoin R$ 506.553 📈</li>
+            <li>• Ouro (g) R$ 630.44</li>
+            <li>• Prata (g) R$ 6,13</li>
+            <li>• Petróleo (barril) US$ 66,80</li>
+          </ul>
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">📚 Curiosidades</h2>
+          <p>Sabia que os músculos que controlam os seus olhos são os mais ativos do corpo? Eles se movem cerca de 100 mil vezes por dia, ajustando o foco e acompanhando objetos em movimento. Para colocar isso em perspectiva, seria como fazer uma caminhada de quase 80 km se comparássemos o esforço ao dos músculos das pernas!</p>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-neutral-950 text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Coluna 1: Sobre -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Sobre o Site</h3>
+                    <p class="text-sm">Um portal de notícias dedicado a trazer as informações mais relevantes com imparcialidade e qualidade jornalística.</p>
+                </div>
+                
+                <!-- Coluna 2: Links Rápidos -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Página Inicial</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Política</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Economia</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Esportes</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3: Contato -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Contato</h3>
+                    <address class="not-italic text-sm">
+                        <p class="mb-2">Email: contato@sitedogui.com</p>
+                    </address>
+                </div>
+                
+                <!-- Coluna 4: Redes Sociais -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
+                <p>© 2025 Site do Gui. Todos os direitos reservados.</p>
+                <p class="mt-2"> Feito com amor, para Anna.</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-white transition-colors">Política de Privacidade</a> | 
+                    <a href="#" class="hover:text-white transition-colors">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
