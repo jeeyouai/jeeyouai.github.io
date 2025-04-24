@@ -11,7 +11,288 @@
         @media (min-width: 1920px) {
             .noticia-imagem {
                 width: 300px;
+                height: 200px;<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="https://digital.g12.co/wp-content/uploads/2022/05/g12-logo-1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site do Gui</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <style>
+        /* Seus estilos existentes permanecem */
+        @media (min-width: 1920px) {
+            .noticia-imagem {
+                width: 300px;
                 height: 200px;
+            }
+            .logo-img {
+                max-height: 126px;
+            }
+        }
+
+        .noticia-imagem {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            max-height: 200px;
+            object-fit: cover;
+            float: right;
+            margin-left: 16px;
+            margin-bottom: 16px;
+            shape-outside: margin-box;
+        }
+
+        .noticia-container {
+            display: flow-root;
+            min-height: 200px;
+        }
+
+        .noticia-texto {
+            padding-right: 16px;
+        }
+
+        .logo-img {
+            height: auto;
+            width: auto;
+            max-height: 126px;
+            margin-top: -40px;
+        }
+
+        .shape {
+            color: #f2f3f4;
+            border: 1px solid;
+            background-color: #212f3d;
+            border-radius: 1rem;
+            padding: 1rem;
+            text-align: justify;
+            margin-top: 16px;
+        }
+
+        /* Novos estilos para as colunas */
+        .scrollbar-custom::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .scrollbar-custom::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        .scrollbar-custom::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-stone-100 font-sans">
+    <header class="bg-neutral-950 shadow-lg py-4 px-6 flex flex-col items-center">
+        <div class="text-sm text-gray-300 self-start w-120 text-left mb-2">
+          <p>Quinta‑feira,</p>
+          <p>24 de abril de 2025</p>
+        </div>
+      
+        <!-- Container relativo para logo + botão -->
+        <div class="relative inline-block">
+          <img
+            src="https://g12brasil.com/wp-content/uploads/2023/03/Brasil.png"
+            alt="Logo do site"
+            class="logo-img"
+          />
+            <a href="https://jeeyouai.github.io">
+          <button
+    onclick="…"
+    class="absolute inset-0 opacity-0 focus:opacity-10 bg-black"
+    aria-label="Ação na logo"
+  ></button></a>
+        </div>
+      </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-4 gap-4 mt-4 px-4 lg:px-5">
+        <!-- Coluna única de 75% -->
+        <div class="lg:col-span-3 h-[calc(100vh-200px)] overflow-y-auto scrollbar-custom flex flex-col gap-4">
+          <a href="https://jeeyouai.github.io/noticias-23-04-25">
+          <!-- Bloco 1: Notícias Anteriores (sticky) -->
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-4 text-gray-800">Notícias de hoje</h2>
+            <article class="flex items-start space-x-4 bg-gray-100 p-3 rounded-lg hover:bg-stone-300 transition-colors">
+                <a href="https://jeeyouai.github.io/noticias-24-04-25">
+                <img
+                  src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2025/04/terremoto.png?w=420&h=240&crop=1&quality=85"
+                  alt="Preview da notícia"
+                  class="w-40 h-40 object-cover rounded"
+                />
+              
+                <!-- Conteúdo textual -->
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800 mb-2">Quinta-feira, 24 de Abril de 2025</h3>
+                  <p class="text-sm text-gray-600 line-clamp-3 mb-2">
+                    Terremoto atinge Istambul, Trump acusa Zelensky de prolongar guerra, presidente do INSS demitido mesmo sem ser citado em investigação, time que "comemora" quando um papa morre, e EUA mirando um novo parceiro comercial.   
+                  </p>
+                  <a href="https://jeeyouai.github.io/noticias-24-04-25" class="text-blue-600 text-sm hover:underline">Leia mais</a>
+                </div>
+              </article>
+          </div>
+          </a>
+          <!-- Bloco 2: Notícias de Hoje (não-sticky) -->
+          <div class="bg-white rounded-lg shadow-md p-4">
+            <h2 class="text-xl font-bold mb-4 text-gray-800">Notícias Anteriores</h2>
+          <div class="space-y-4">
+
+            <article class="flex items-start space-x-4 bg-gray-100 p-3 rounded-lg hover:bg-stone-300 transition-colors">
+              <!-- Miniatura à esquerda -->
+               <a href="https://jeeyouai.github.io/noticias-23-04-25">
+              <img
+                src="https://static.escolakids.uol.com.br/2024/04/1-imagem-de-uma-praia-tropical-no-oceano-nas-ilhas-maldivas.jpg"
+                alt="Preview da notícia"
+                class="w-40 h-40 object-cover rounded"
+              />
+            
+              <!-- Conteúdo textual -->
+              <div class="flex-1">
+                <h3 class="font-semibold text-gray-800 mb-2">Quarta-feira, 23 de Abril de 2025</h3>
+                <p class="text-sm text-gray-600 line-clamp-3 mb-2">
+                  O mar como nossa nova opção para combate às mudanças climáticas, a pirataria sendo tão Brasileira quanto nosso futebol,
+                  a possível receção da economia global, ex-diretor da maior empresa do Brasil preso por corrupção e a startup que pretende acabar com o trabalho humano.  
+                </p>
+                <a href="https://jeeyouai.github.io/noticias-23-04-25" class="text-blue-600 text-sm hover:underline">Leia mais</a>
+              </div>
+            </a>
+            </article>
+          
+              <!-- COPIAR DAQUI -->
+              <article class="flex items-start space-x-4 bg-gray-100 p-3 rounded-lg hover:bg-stone-300 transition-colors">
+                <a href="https://jeeyouai.github.io/noticias-22-04-25">
+                <img
+                  src="https://i0.wp.com/patria.digital/wp-content/uploads/2025/04/moraes.png?fit=886%2C498&ssl=1"
+                  alt="Preview da notícia"
+                  class="w-40 h-40 object-cover rounded"
+                />
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800 mb-2">Terça-feira, 22 de Abril de 2025</h3>
+                  <p class="text-sm text-gray-600 line-clamp-3 mb-2">
+                    O STF é criticado pela imprensa internacional, robôs correm junto com humanos, o levantamento de dados do feriado no Estado, Trump faz o mercado americano despencar, e incêndio em plataforma da Petrobras.  
+                  </p>
+                  <a href="https://jeeyouai.github.io/noticias-22-04-25" class="text-blue-600 text-sm hover:underline">Leia mais</a>
+                </div>
+              </article>
+            </a>
+              <!--COPIAR ATÉ AQUI-->
+
+              <article class="flex items-start space-x-4 bg-gray-100 p-3 rounded-lg hover:bg-stone-300 transition-colors">
+                <!-- Miniatura à esquerda -->
+<a href="https://jeeyouai.github.io/noticias-21-04-25">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHgN7Ek6nyzj1ny5C_MXM6uE-KL37ixViBQw&s"
+                  alt="Preview da notícia"
+                  class="w-40 h-40 object-cover rounded"
+                />
+              
+                <!-- Conteúdo textual -->
+                <div class="flex-1">
+                  <h3 class="font-semibold text-gray-800 mb-2">Segunda-feira, 21 de Abril de 2025</h3>
+                  <p class="text-sm text-gray-600 line-clamp-3 mb-2">
+                    O adeus ao Papa, plano de saúde do Governo, a Páscoa na guerra da Ucrânia, protestos na terra do Tio Sam e a amizade do Brasil com a China. 
+                  </p>
+                  <a href="https://jeeyouai.github.io/noticias-21-04-25" class="text-blue-600 text-sm hover:underline">Leia mais</a>
+                </div>
+              </article>
+              <!-- Repetir para outras notícias -->
+          </div>
+          </div>
+      </a>
+        </div>
+      
+        <!-- Coluna de 25%: Filtro Temporal -->
+        <div class="lg:col-span-1">
+          <div class="bg-white rounded-lg shadow-md p-4 sticky top-4">
+            <h2 class="text-xl font-bold mb-4 text-gray-800">Filtrar por Data</h2>
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-gray-700">Selecione o Mês</label>
+                    <select class="w-full p-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+                        <option>Abril 2025</option>
+                        <!-- Adicionar mais opções -->
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-gray-700">Selecione o Dia</label>
+                    <div class="grid grid-cols-3 gap-2">
+                        <!-- Dias exemplo -->
+                        <button class="py-1 px-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"><a href="https://jeeyouai.github.io/noticias-24-04-25">24</a></button>
+                        <button class="py-1 px-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"><a href="https://jeeyouai.github.io/noticias-23-04-25">23</a></button>
+                        <button class="py-1 px-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"><a href="https://jeeyouai.github.io/noticias-22-04-25">22</a></button>
+                        <button class="py-1 px-2 bg-gray-100 hover:bg-gray-200 rounded text-sm"><a href="https://jeeyouai.github.io/noticias-21-04-25">21</a></button>
+                        <!-- Adicionar mais dias -->
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <footer class="bg-neutral-950 text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Coluna 1: Sobre -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Sobre o Site</h3>
+                    <p class="text-sm">Um portal de notícias dedicado a trazer as informações mais relevantes com imparcialidade e qualidade jornalística.</p>
+                </div>
+                
+                <!-- Coluna 2: Links Rápidos -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Página Inicial</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Política</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Economia</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Esportes</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3: Contato -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Contato</h3>
+                    <address class="not-italic text-sm">
+                        <p class="mb-2">Email: contato@noticiasdogui.com.br</p>
+                    </address>
+                </div>
+                
+                <!-- Coluna 4: Redes Sociais -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
+                <p class="mt-2"> Feito com amor, para Anna.</p>
+                <p>© 2025 Notícias do Gui. Todos os direitos reservados.</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-white transition-colors">Política de Privacidade</a> | 
+                    <a href="#" class="hover:text-white transition-colors">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
             }
             .logo-img {
                 max-height: 126px;
