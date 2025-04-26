@@ -338,7 +338,7 @@
         dias.forEach((dia) => {
           const [mes, ano] = mesSelecionado.split("-");
           const diaStr = String(dia).padStart(2, '0');
-          const link = `/noticias/${diaStr}-${mes}-${ano.slice(2)}`;
+          const link = `/noticias/${diaStr}-${mes}-${ano}`;
     
           const botao = document.createElement("button");
           botao.className = "py-1 px-2 bg-gray-100 hover:bg-gray-200 rounded text-sm";
