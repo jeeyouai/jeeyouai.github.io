@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site do Gui</title>
+    <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+    <style>
+      @media (min-width: 1920px) {
+        .noticia-imagem {
+          width: 300px;
+          height: 200px;
+        }
+        .logo-img {
+          max-height: 126px;
+        }
+      }
+
+      .noticia-imagem {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+        max-height: 200px;
+        object-fit: cover;
+        float: right; /* Alterado para right */
+        margin-left: 16px; /* Invertido o margin */
+        margin-bottom: 16px;
+        shape-outside: margin-box;
+      }
+
+      .noticia-container {
+        display: flow-root;
+        min-height: 200px;
+      }
+
+      .noticia-texto {
+        padding-right: 16px; /* Espaço entre texto e imagem */
+      }
+
+      .logo-img {
+        height: auto;
+        width: auto;
+        max-height: 126px;
+        margin-top: -40px;
+      }
+
+      .shape {
+        color: #f2f3f4;
+        border: 1px solid;
+        background-color: #212f3d ;
+        border-radius: 1rem;
+        padding: 1rem;
+        text-align: justify;
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body class="bg-stone-100 font-sans">
+    <header class="bg-neutral-950 shadow-lg py-4 px-6 flex flex-col items-center">
+      <div class="text-sm text-gray-300 self-start w-120 text-left mb-2">
+        <p>Terça‑feira,</p>
+        <p>22 de abril de 2025</p>
+      </div>
+    
+      <!-- Container relativo para logo + botão -->
+      <div class="relative inline-block">
+        <img
+          src="https://g12brasil.com/wp-content/uploads/2023/03/Brasil.png"
+          alt="Logo do site"
+          class="logo-img"
+        />
+          <a href="https://jeeyouai.github.io">
+        <button
+  onclick="…"
+  class="absolute inset-0 opacity-0 focus:opacity-10 bg-black"
+  aria-label="Ação na logo"
+></button></a>
+      </div>
+    </header>
+
+    <main class="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-4 px-4 lg:px-5">
+
+      <!-- Coluna da esquerda -->
+      <div class="lg:col-span-2 flex flex-col gap-4">
+
+<!-- Notícia 2 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://i0.wp.com/patria.digital/wp-content/uploads/2025/04/moraes.png?fit=886%2C498&ssl=1" alt="Imagem da Notícia 2" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">The Economist vs O Supremo</h2>
+            <p>Órgãos da imprensa internacional, como The Washington Post, The Economist e Le Monde, têm direcionado críticas ao ministro do Supremo Tribunal Federal (STF) Alexandre de Moraes, questionando supostos excessos em suas decisões judiciais. As reportagens destacam medidas como censura a redes sociais, prisões de opositores e intervenções em processos eleitorais, classificando-as como potencialmente antidemocráticas.</p>
+            <p class="mt-2">De um lado, analistas estrangeiros argumentam que Moraes adota um "tom autoritário", especialmente em casos envolvendo liberdade de expressão. De outro, seus apoiadores afirmam que as ações do ministro são necessárias para combater fake news, discurso de ódio e tentativas de desestabilização institucional, como os ataques de 8 de janeiro de 2023.</p>
+            <p class="mt-2">O debate reacendeu o debate sobre os limites de atuação do STF e o papel do Judiciário na política brasileira — agora também sob a lente da imprensa internacional.</p>
+            <div class="shape">•🔎 Desde 2024, o <i>The Economist</i> não poupa críticas ao Brasil, apontando que, “Bolsonaro, um agitador de extrema-direita, supostamente planejou um golpe para permanecer no poder”, mas que a democracia brasileira também tem "outro problema: juízes com poder excessivo".</div>
+          </div>
+        </div>
+
+        <!-- Notícia 1 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://www.infomoney.com.br/wp-content/uploads/2025/04/robochina.jpg?quality=50&strip=all" alt="Imagem da Notícia 1" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">A primeira meia-maratona de humanoides</h2>
+            <p>21 robôs humanoides participaram ao lado de milhares de corredores da meia maratona de Yizhuang, em Pequim, neste sábado (19). Esta é a primeira vez que essas máquinas competiram junto com humanos em um percurso de 21 km.</p>
+            <p class="mt-2">Apesar de ser uma cena que lembra filmes de ficção, os robôs ficaram muito atrás dos seres humanos. O Tiangong Ultra, de 1,80m, ficou em primeiro entre os robôs, com um tempo de prova de 2h40 - quase duas horas depois do campeão humano.</p>
+            <p class="mt-2">Ainda assim, o feito é relevante ao colocarmos em perspectiva. Há apenas alguns anos, cientistas tinham dificuldade de fazer humanoides andar. Conseguir fazê-los correr e resistir por 21km é um feito bem considerável.</p>
+            <p class="mt-2">Apesar de parecer meio banal, isso representa uma evolução na capacidade de robôs de fazer tarefas físicas. Hora ou outra, eles estarão prontos para funções que humanos ainda precisam exercer. Segurança, resgate, construção… E por aí vai.</p>
+            <div class="shape">•🦾 Os robôs contavam com uma vantagem sobre os seres humanos: podiam trocar suas baterias. Mesmo assim, apenas 4 dos 21 robôs conseguiram terminar a prova dentro do tempo-limite de quatro horas.
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Notícia 3 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://www.bandab.com.br/wp-content/uploads/2025/04/PRF-FERIADO-PASCOA-DADOS-960x540.jpg.webp" alt="Imagem da Notícia 3" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">O balanço de dados do feriado de Páscoa no Paraná</h2>
+            <p>O feriadão prolongado de Páscoa e Tiradentes, entre os dias 17 e 22 de abril, terminou com um saldo preocupante nas rodovias que cortam o Paraná.</p>
+            <p class="mt-2">Ao todo, foram 13 mortes, 209 pessoas feridas e mais de 25 mil infrações registradas em ações de fiscalização das polícias rodoviárias estadual (PMPR/BPRv) e federal (PRF). A imprudência chamou a atenção: houve flagrantes de motoristas dirigindo a 177 km/h, 128 condutores sob efeito de álcool e 212 dirigindo sem habilitação ou com CNH irregular.</p>
+            <p class="mt-2">Outro destaque foi o uso de radares para coibir o excesso de velocidade, que resultou em 14.069 flagrantes de motoristas acima do limite permitido. Isso representa uma média de aproximadamente 1,95 por minuto — ou seja, quase dois motoristas multados por minuto por desrespeitarem os limites de velocidade.</p>
+            <div class="shape">•🔎 Comparado ao mesmo período do ano anterior, houve um aumento de 44% no número de mortes nas estradas paranaenses, que passaram de nove para treze.</div>
+            </p>
+          </div>
+        </div>
+
+        <!-- Notícia 4 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://media.beehiiv.com/cdn-cgi/image/fit=scale-down,format=auto,onerror=redirect,quality=80/uploads/asset/file/a95e842c-9c3d-41f8-8379-e3c93e15b860/image_-_2025-04-21T181329.717.png?t=1745270023" alt="Imagem da Notícia 4" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">Mercado americano despenca após novas ameaças de Trump ao Fed</h2>
+            <p>Os mercados financeiros dos Estados Unidos enfrentaram um dia de forte turbulência nesta segunda-feira, com os principais índices registrando quedas expressivas após o presidente Donald Trump renovar seus ataques ao presidente do Federal Reserve (Fed), Jerome Powell.</p>
+            <p class="mt-2">Em postagens em suas redes sociais, Trump chamou Powell de “perdedor” e “Sr. Tarde Demais”, exigindo que o Fed realizasse cortes “preventivos” nas taxas de juros para evitar uma desaceleração econômica.</p>
+            <p class="mt-2">A incerteza gerada pelas declarações de Trump reacendeu o temor entre investidores, levando a uma fuga para ativos mais seguros, como títulos do Tesouro americano. Analistas alertam que a instabilidade política em torno do Fed pode prolongar a volatilidade no curto prazo.</p>
+            <div class="shape">•🔎 Desde que nomeou Jerome Powell para presidir o Federal Reserve (Fed) em 2018, Donald Trump já o criticou publicamente pelo menos 60 vezes.</div>
+          </div>
+        </div>
+
+        <!-- Notícia 5 -->
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg noticia-container">
+          <img src="https://newr7-r7-prod.web.arc-cdn.net/resizer/v2/BMXVATKS5JGKVM4PLQR7Z2ROLY.jpeg?auth=a065c4a1b085a2ded77d6b3285721f5adbda3377e037d1da9d51e7c373c2e286&width=1600&height=930" alt="Imagem da Notícia 5" class="noticia-imagem rounded-lg">
+          <div class="noticia-texto">
+            <h2 class="text-xl font-bold mb-2">Plataforma de Petróleo pega fogo na Bacia de Campos</h2>
+            <p>Na manhã de segunda-feira, 21, uma plataforma de petróleo da Petrobras com 176 pessoas a bordo pegou fogo, na Bacia de Campo dos Goytacazes, região Norte do Rio de Janeiro.</p>
+            <p class="mt-2">De acordo com o Sindipetro, o acidente aconteceu na Cherne 1, também conhecida como PCH-1. Também foi detalhado que o fogo teve início às 7h25 e só foi controlado por volta das 11h25.</p>
+            <p class="mt-2">Um dos trabalhadores da plataforma caiu ao mar, e foi resgatado consciente, com queimaduras leves. Outros 32 trabalhadores foram atendidos, 14 por queimaduras e 18 por sintomas por inalação de fumaça. Não houve mortes. </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coluna da direita com manchetes -->
+      <div class="space-y-4 border-l border-gray-300 pl-4">
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete1">
+          <h2 class="text-xl font-bold mb-2">🗓 HOJE É DIA...</h2>
+          <p>
+            <ul>
+              <li>🧳 do Agente de Viagens</li>
+              <li>🛩 do Aviação de Caça</li>
+              <li>📲 da Ciência, Tecnologia e Inovação na Marinha Brasileira</li>
+              <li>🇵🇹 da Comunidade Luso-Brasileira</li>
+              <li>🔭 do Descobrimento do Brasil Pelos Portugueses</li>
+              <li>⚜ do Líder Escoteiro</li>
+              <li>😇 da Mãe Terra - Deidade Suprema dos Indígenas Nativos</li>
+              <li>🍠 da Mandioca</li>
+              <li>🙇 da Oração e Testemunho do Homem Batista</li>
+              <li>🌎 do Planeta Terra</li>
+              <li>😵 da Tontura</li>
+            </ul>
+          </p>            
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">Principais Manchetes Internacionais</h2>
+          <ul>
+            <li><a href="https://g1.globo.com/economia/agronegocios/noticia/2025/04/21/vinho-tem-producao-mais-baixa-em-60-anos-clima-e-preco-alto-ajudam-a-explicar-queda.ghtml" class="underline hover:text-pink-400">• Vinho tem a produção mais baixa em 60 anos</a></li>
+            <li><a href="https://veja.abril.com.br/mundo/presidente-de-israel-reclama-que-refens-em-gaza-ja-nao-sao-tratados-como-prioridade/" class="underline hover:text-pink-400">• Ministro de Israel diz que reféns em Gaza não são prioridade</a></li>
+            <li><a href="https://noticias.r7.com/internacional/japones-compra-carro-de-luxo-apos-10-anos-de-economia-e-o-perde-em-minutos-21042025/" class="underline hover:text-pink-400">• Japonês compra carro de luxo após 10 anos de economia e o perde em minutos</a></li>
+            <li><a href="https://www.infomoney.com.br/mercados/china-adverte-paises-contra-acordos-comerciais-com-eua-que-prejudiquem-pequim//" class="underline hover:text-pink-400">• China adverte países contra acordos comerciais com EUA que prejudiquem Pequim</a></li>
+            <li><a href="https://www.noticiasaominuto.com.br/mundo/2277411/francisco-sera-o-primeiro-papa-em-122-anos-enterrado-fora-do-vaticano" class="underline hover:text-pink-400">• Francisco será o primeiro papa em 122 anos enterrado fora do Vaticano</a></li>
+            <li><a href="https://g1.globo.com/tecnologia/noticia/2025/04/22/google-enfrenta-julgamento-historico-por-monopolio-nas-buscas.ghtml" class="underline hover:text-pink-400">• Dividir o Google só ajuda a China, diz empresa em defesa</a></li>
+          </ul>
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">Principais Manchetes Nacionais</h2>
+          <ul>
+            <li><a href="https://noticias.r7.com/santa-catarina/nd-mais/video-caminhoneiro-invade-area-de-escape-e-deixa-rastro-de-fumaca-na-br-376-21042025/" class="underline hover:text-pink-400">• Caminhoneiro ‘invade’ área de escape e deixa rastro de fumaça na BR-376</a></li>
+            <li><a href="https://veja.abril.com.br/mundo/casas-de-aposta-apontam-claro-favorito-para-suceder-papa-francisco/" class="underline hover:text-pink-400">• Casas de aposta apontam claro favorito para suceder papa Francisco</a></li>
+            <li><a href="https://ge.globo.com/outros-esportes/premio-laureus/noticia/2025/04/21/premio-laureus-duplantis-e-eleito-o-atleta-masculino-do-ano-em-cerimonia.ghtml" class="underline hover:text-pink-400">• Rebeca Andrade vence na categoria "Retorno do Ano"</a></li>
+            <li><a href="https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2025/04/21/idosa-e-resgatada-por-helicoptero-da-pm-apos-cair-em-buraco-em-trilha-em-sao-roque.htm" class="underline hover:text-pink-400">• Idosa é resgatada por helicóptero da PM após cair em buraco em trilha em São Roque</a></li>
+            <li><a href="https://g1.globo.com/mg/minas-gerais/noticia/2025/04/21/carro-desgovernado-sai-da-pista-na-br-381-invade-posto-e-deixa-nove-feridos-frentista-esta-em-estado-grave.ghtml" class="underline hover:text-pink-400">• Carro desgovernado sai da pista na BR-381, invade posto e deixa nove feridos</a></li>
+          </ul>
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">📊 Indicadores Econômicos</h2>
+          <ul>
+            <li>• IBOVESPA: 129.650,03 📈</li>
+            <li>• Dólar Comercial R$ 5,804 📉</li>
+            <li>• Dólar Turismo R$ 6,036 📉</li>
+            <li>• Euro R$ 6,68 📈</li>
+            <li>• Bitcoin R$ 512.609 📈</li>
+            <li>• Ouro (g) R$ 630.44</li>
+            <li>• Prata (g) R$ 6,12</li>
+            <li>• Petróleo (barril) US$ 66,99</li>
+          </ul>
+        </div>
+        <div class="bg-stone-300 text-black p-4 rounded-lg shadow-lg manchete2">
+          <h2 class="text-xl font-bold mb-2">📚 Curiosidades</h2>
+          <p>🦋 As asas das borboletas são transparentes — as cores vêm da forma como a luz se espalha nelas.
+            Apesar de parecerem super coloridas, as asas das borboletas são cobertas por escamas minúsculas e transparentes. A cor que vemos é resultado da refração da luz nessas escamas, como um mini arco-íris em cada asa. Isso é chamado de coloração estrutural, e não pigmentação.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-neutral-950 text-gray-300 py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Coluna 1: Sobre -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Sobre o Site</h3>
+                    <p class="text-sm">Um portal de notícias dedicado a trazer as informações mais relevantes com imparcialidade e qualidade jornalística.</p>
+                </div>
+                
+                <!-- Coluna 2: Links Rápidos -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Página Inicial</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Política</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Economia</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition-colors">Esportes</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Coluna 3: Contato -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Contato</h3>
+                    <address class="not-italic text-sm">
+                        <p class="mb-2">Email: contato@noticiasdogui.com.br</p>
+                    </address>
+                </div>
+                
+                <!-- Coluna 4: Redes Sociais -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 text-white">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm">
+                <p>© 2025 Site do Gui. Todos os direitos reservados.</p>
+                <p class="mt-2"> Feito com amor, para Anna.</p>
+                <div class="mt-2">
+                    <a href="#" class="hover:text-white transition-colors">Política de Privacidade</a> | 
+                    <a href="#" class="hover:text-white transition-colors">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
