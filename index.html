@@ -320,40 +320,42 @@
             </div>
         </div>
     </footer>
-    <script>
-      const selectMes = document.getElementById('mes-select');
-      const containerDias = document.querySelector('#container-dias');
-    
-      const diasPorMes = {
-        "12-24": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
-        "01-25": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
-        "04-25": [21, 22, 23, 24, 25, 26]
-      };
-    
-      function atualizarDias() {
-        const mesSelecionado = selectMes.value; // ex: "04-2025"
-        const dias = diasPorMes[mesSelecionado] || [];
-        containerDias.innerHTML = "";
-    
-        dias.forEach((dia) => {
-          const [mes, ano] = mesSelecionado.split("-");
-          const diaStr = String(dia).padStart(2, '0');
-          const link = `/noticias/${diaStr}-${mes}-${ano}`;
-    
-          const botao = document.createElement("button");
-          botao.className = "py-1 px-2 bg-gray-100 hover:bg-gray-200 rounded text-sm";
-    
-          const a = document.createElement("a");
-          a.href = link;
-          a.textContent = diaStr;
-    
-          botao.appendChild(a);
-          containerDias.appendChild(botao);
-        });
-      }
-    
-      selectMes.addEventListener("change", atualizarDias);
-      window.addEventListener("DOMContentLoaded", atualizarDias);
-    </script>
+   <script>
+  const selectMes = document.getElementById('mes-select');
+  const containerDias = document.querySelector('#container-dias');
+
+  const diasPorMes = {
+    "12-24": [18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31],
+    "01-25": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+    "04-25": [21, 22, 23, 24, 25, 26]
+  };
+
+  function atualizarDias() {
+    const mesSelecionado = selectMes.value; // ex: "04-2025"
+    const dias = diasPorMes[mesSelecionado] || [];
+    containerDias.innerHTML = "";
+
+    dias.forEach((dia) => {
+      const [mes, ano] = mesSelecionado.split("-");
+
+      // Formata o dia e o link corretamente
+      const diaStr = String(dia).padStart(2, '0');
+      const link = `./noticias/${diaStr}-${mes}-${ano}.html`;
+
+      const botao = document.createElement("button");
+      botao.className = "py-1 px-2 bg-gray-100 hover:bg-gray-200 rounded text-sm";
+
+      const a = document.createElement("a");
+      a.href = link;
+      a.textContent = diaStr;
+
+      botao.appendChild(a);
+      containerDias.appendChild(botao);
+    });
+  }
+
+  selectMes.addEventListener("change", atualizarDias);
+  window.addEventListener("DOMContentLoaded", atualizarDias);
+</script>
 </body>
 </html>
